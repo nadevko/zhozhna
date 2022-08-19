@@ -7,7 +7,8 @@
     "react-app",
     "react-app/jest",
     "standard-with-typescript",
-    "standard-jsdoc"
+    "standard-jsdoc",
+    "prettier"
   ],
   "parserOptions": {
     "project": ["tsconfig.json"]

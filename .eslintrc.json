@@ -1,6 +1,15 @@
 {
+  "env": {
+    "browser": true,
+    "jest": true
+  },
   "extends": [
     "react-app",
-    "react-app/jest"
-  ]
+    "react-app/jest",
+    "standard-with-typescript",
+    "standard-jsdoc"
+  ],
+  "parserOptions": {
+    "project": ["tsconfig.json"]
+  }
 }

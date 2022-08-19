@@ -1,16 +1,35 @@
 {
+  "root": true,
   "env": {
+    "es2022": true,
     "browser": true,
     "jest": true
   },
-  "extends": [
-    "react-app",
-    "react-app/jest",
-    "standard-with-typescript",
-    "standard-jsdoc",
-    "prettier"
-  ],
-  "parserOptions": {
-    "project": ["tsconfig.json"]
-  }
+  "plugins": ["jsdoc"],
+  "extends": ["eslint:recommended", "react-app", "react-app/jest"],
+  "overrides": [
+    {
+      "files": ["*.{js,jsx,mjs,cjs}"],
+      "extends": ["standard", "standard-jsdoc", "prettier"]
+    },
+    {
+      "files": ["*.{ts,tsx}"],
+      "plugins": ["@typescript-eslint"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "standard-with-typescript",
+        "standard-jsdoc/ts",
+        "prettier"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "tsconfig.json"
+      },
+      "settings": {
+        "jsdoc": {
+          "mode": "typescript"
+        }
+      }
+    }
+  ]
 }

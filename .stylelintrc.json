@@ -3,5 +3,11 @@
     "stylelint-config-recommended",
     "stylelint-config-standard",
     "stylelint-config-prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.html"],
+      "customSyntax": "postcss-html"
+    }
   ]
 }

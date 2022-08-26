@@ -1,43 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="be">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+
+    <link rel="icon" href="%PUBLIC_URL%/static/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/static/favicon-32.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon-192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Невераемныя прыгоды ДжоДжо: Прывідная кроў</title>
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Сайт, дзе вы можаце дакрануцца да «Невераемных прыгод ДжоДжо», лепшай прыгодніцкай анімэ-франшызы, мангі і непахіснага пласту інтэрнэт-культуры. Глядзіце серыял, сачыце за навінамі, абгрунтоўвайце падзеі і адзначайце свой прагрэс"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <header>
+      <nav>
+        <a href="#search"
+          ><img
+            src="static/logo-jojo.svg"
+            alt="Невераемны прыгоды ДжоДжо"
+            height="48px"
+            id="logo"
+        /></a>
+        <a href="#search" id="subtitle"><h1>Прывідная кроў</h1></a>
+      </nav>
+      <nav>
+        <input type="search" placeholder="Пошук" name="search" id="search" />
+        <a id="search-button" class="pseudobutton" href="#search"
+          ><img src="static/search.svg" />
+          <h2>Пошук</h2></a
+        >
+        <a class="pseudobutton" href="#comments"
+          ><img src="static/talks.svg" />
+          <h2>Размовы</h2></a
+        >
+        <a class="pseudobutton" href="#about"
+          ><img src="static/about.svg" />
+          <h2>Пра нас</h2></a
+        >
+        <a class="pseudobutton" href="#account"
+          ><img src="static/account.svg" />
+          <h2>Акаўнт</h2></a
+        >
+      </nav>
+    </header>
+    <main>
+      <article>
+        <img src="api/title/1/poster-art.jpeg" alt="Постэр" height="512px" />
+        <section>
+          <h1>Невераемныя прыгоды ДжоДжо: Прывідная кроў</h1>
+          <dl>
+            <dt>Тып</dt>
+            <dd>Анімэ/25</dd>
+            <dt>Частак</dt>
+            <dd>26</dd>
+            <dt>Працягласць часткі</dt>
+            <dd>24 хв.</dd>
+            <dt>Статус</dt>
+            <dd><abbr title="С 6 октября 2012 г. по 6 апреля 2013 г.">Выйшла</abbr></dd>
+            <dt>Жанры</dt>
+            <dd>
+              <ul>
+                <li>Сёнан</li>
+                <li>Экшан</li>
+                <li>Прыгоды</li>
+                <li>Звышнатуральнае</li>
+                <li>Вампіры</li>
+              </ul>
+            </dd>
+            <dt>Узрост</dt>
+            <dd>
+              <abbr
+                title="Асобы, якія не дасягнулі 17-гадовага ўзросту, дапускаюцца на фільм толькі ў суправаджэнні аднаго з бацькоў, альбо законнага прадстаўніка"
+                >R-17</abbr
+              >
+            </dd>
+            <dt>Альтэрнатыўныя назвы</dt>
+            <dd>
+              <ul>
+                <li>ジョジョの奇妙な冒険</li>
+                <li>JoJo's Bizarre Adventure</li>
+                <li>JoJo no Kimyou na Bouken (2012)</li>
+                <li>JoJo's Bizarre Adventure: The Animation, JoJo</li>
+              </ul>
+            </dd>
+            <dt>Студыя</dt>
+            <dd>David Production</dd>
+            <dt>У каталогах</dt>
+            <dd>
+              <dl>
+                <dt>
+                  <a href="https://shikimori.org/animes/14719-jojo-no-kimyou-na-bouken-tv"
+                    >Shikimori</a
+                  >
+                </dt>
+                <dd>7.92</dd>
+                <dt><a href="https://www.kinopoisk.ru/series/707636/">Кинопоиск</a></dt>
+                <dd>8.6</dd>
+                <dt><a href="https://myanimelist.net/anime/14719">MyAnimeList</a></dt>
+                <dd>7.91</dd>
+                <dt><a href="https://www.imdb.com/title/tt2359704/">IMDb</a></dt>
+                <dd>8.4</dd>
+              </dl>
+            </dd>
+            <dt>Афіцыйныя крыніцы</dt>
+            <dd>
+              <ul>
+                <li><a href="https://jojo-animation.com/fb_bt/">Сайт</a></li>
+                <li><a href="https://twitter.com/anime_jojo">Twitter</a></li>
+              </ul>
+            </dd>
+          </dl>
+        </section>
+        <section>
+          <p>
+            Вялікабрытанія, XIX стагоддзе. Джонатан Джостар, ён жа ДжоДжо, шчасліва жыве ў
+            асабняку са сваім бацькам. І вось у яго сям'і здараецца папаўненне — бацька
+            сямейства Джордж Джостар ўсынаўляе дзіўнага хлопца па імю Дзіа Брандо. Джонатан рады
+            — у яго з'явіцца новы сябар. Аднак Дзіа зусім не настроены выяўляць прыязнасць. Ён
+            задумаў пазбавіцца ад адзінага спадчынніка Джостаров і займець увесь іх стан сябе.
+            Мала таго, што ён збіў Джостара-малодшага ў спарынгу па боксе, наладзіў яго сяброў
+            супраць Джонатана, так яшчэ і скраў першы пацалунак у яго дзяўчыны! Як быццам гэтага
+            мала, Дзіа спальвае ў печы любімую сабаку Джонатана — Дэні. Але горш за ўсё тое, што
+            Дзіа таксама не лыкам шыты — на людзях ён паводзіць сябе як узорны джэнтльмен. Тут
+            цярпенню ДжоДжо прыходзіць канец...
+          </p>
+        </section>
+      </article>
+      <iframe
+        src="https://drive.google.com/file/d/1Tce3wqB2JJN_Dw7j4UXlwFWqOyuGdhYf/preview"
+        allow="autoplay; fullscreen"
+      ></iframe>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="#catalog-seach"
+            ><img
+              src="static/logo-zhozhna-colored.svg"
+              alt="Лагатып Žožna.by (Надпіс «Жожна» на лацінцы, стылізавана пад лагатып японскага выдання «Невераемных прыгод ДжоДжо: Прывідная кроў»)"
+              height="80px"
+              id="about"
+          /></a>
+        </li>
+        <li><a href="doc.html">Дакументаванне</a></li>
+        <li><a href="https://github.com/nadevko/zhozhna">Франтэнд</a></li>
+        <li><a href="https://github.com/RedoTV/AnimeProject">Бэкэнд</a></li>
+      </ul>
+      <p>
+        Сайт, дзе вы можаце дакрануцца да «Невераемных прыгод ДжоДжо», лепшай прыгодніцкай
+        анімэ-франшызы, мангі і непахіснага пласту інтэрнэт-культуры. Глядзіце серыял, сачыце за
+        навінамі, абгрунтоўвайце падзеі і адзначайце свой прагрэс
+      </p>
+    </footer>
   </body>
 </html>

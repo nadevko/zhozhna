@@ -2,12 +2,19 @@
   "extends": [
     "stylelint-config-recommended",
     "stylelint-config-standard",
+    "stylelint-config-css-modules",
     "stylelint-config-prettier"
   ],
   "overrides": [
     {
       "files": ["**/*.html"],
       "customSyntax": "postcss-html"
+    },
+    {
+      "files": ["**/*.module.css"],
+      "rules": {
+        "selector-class-pattern": "^[a-z]\\w+$"
+      }
     }
   ]
 }

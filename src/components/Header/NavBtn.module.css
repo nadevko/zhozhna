@@ -1,0 +1,49 @@
+.body {
+	display: flex;
+	align-items: center;
+	font-family: Rubik, sans-serif;
+	text-decoration: none;
+	color: hsl(0deg 0% 0%);
+	background: linear-gradient(145deg, hsl(0deg 0% 100% / 20%), hsl(240deg 15% 88% / 20%));
+	border-radius: 16px;
+	box-shadow: 2px 2px 4px hsl(240deg 9% 82%), -2px -2px 4px hsl(0deg 0% 100%);
+	font-size: 10px;
+	margin: 0 4px;
+}
+
+.name {
+	display: inline;
+	font-weight: 400;
+	margin: 0 8px 0 0;
+
+	@media screen and (max-device-width: 1280px) {
+		display: none;
+	}
+
+	@media screen and (max-device-width: 768px) {
+		display: none;
+	}
+}
+
+.body_search {
+	composes: body;
+	display: none;
+
+	@media screen and (max-device-width: 1024px) {
+		display: initial;
+	}
+
+	@media screen and (max-device-width: 768px) {
+		display: none;
+	}
+
+	@media screen and (max-device-width: 480px) {
+		display: initial;
+	}
+}
+
+.icon {
+	height: 24px;
+	width: 24px;
+	padding: 8px;
+}

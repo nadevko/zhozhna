@@ -1,0 +1,101 @@
+.body {
+	position: sticky;
+	top: 0;
+	height: 64px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: hsl(240deg 100% 98% / 80%);
+	backdrop-filter: blur(8px);
+	box-shadow: 2px 2px 4px hsl(0deg 0% 0% / 15%), -2px -2px 4px hsl(0deg 0% 100%);
+	white-space: nowrap;
+
+	@media screen and (max-device-width: 768px) {
+		height: 50px;
+		bottom: 0;
+		justify-content: center;
+		position: fixed;
+		top: initial;
+	}
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	margin: 0 8px;
+}
+
+.nav_altHide {
+	composes: nav;
+	@media screen and (max-device-width: 768px) {
+		display: none;
+	}
+}
+
+.logo {
+	height: 48px;
+	width: auto;
+	display: block;
+	padding: 8px;
+	margin: 0;
+}
+
+.subNameParent {
+	display: flex;
+	align-items: center;
+	font-family: Rubik, sans-serif;
+	text-decoration: none;
+	color: hsl(0deg 0% 0%);
+	font-size: 10px;
+	margin: 0 4px;
+}
+
+.subName {
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	margin: 0 4px;
+
+	@media screen and (max-device-width: 768px) {
+		display: initial;
+		padding: 0 16px;
+	}
+}
+
+.subName::before {
+	background-color: hsl(0deg 0% 0% / 10%);
+	content: " ";
+	display: inline-block;
+	height: 40px;
+	margin-right: 24px;
+	width: 1px;
+}
+
+.input {
+	background: linear-gradient(145deg, hsl(0deg 0% 100% / 20%), hsl(240deg 15% 88% / 20%));
+	border-radius: 20px;
+	border: 0;
+	box-shadow: 2px 2px 4px hsl(240deg 9% 82%), -2px -2px 4px hsl(0deg 0% 100%);
+	height: 40px;
+	margin: 0 16px;
+	padding: 0 16px;
+
+	@media screen and (max-device-width: 1024px) {
+		display: none;
+	}
+
+	@media screen and (max-device-width: 768px) {
+		display: initial;
+	}
+
+	@media screen and (max-device-width: 480px) {
+		display: none;
+	}
+}
+
+.input:focus {
+	outline: none;
+	background: linear-gradient(145deg, hsl(240deg 15% 88% / 40%), hsl(0deg 0% 100% / 40%));
+}

@@ -10,11 +10,11 @@ indent_style = tab
 indent_size = 8
 max_line_length = 96
 
-[*.{md,json}]
+[*.md]
 indent_style = space
 indent_size = 2
 max_line_length = 72
 
-[*.{html,js,jsx,ts,tsx}]
+[*.{html,json,js,jsx,ts,tsx}]
 indent_style = space
 indent_size = 2

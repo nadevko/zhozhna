@@ -1,4 +1,5 @@
 module.exports = {
+  proseWrap: 'always',
   overrides: [
     {
       files: '*.{js,jsx,ts,tsx}',

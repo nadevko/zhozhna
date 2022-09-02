@@ -1,25 +1,37 @@
 # Žožna
 
-> Жажнейшы сайт пра жожу для джаджафагаў ад аматаў жыжы
+> Cool frontend for online cinemas
 
-Дзе вы можаце дакрануцца да «Невераемных прыгод ДжоДжо», лепшай
-прыгодніцкай анімэ-франшызы, мангі і непахіснага пласту
-інтэрнэт-культуры. Глядзіце серыял, сачыце за навінамі, абгрунтоўвайце
-падзеі і адзначайце свой прагрэс.
+[be](README.be.md) | [en](README.md)
 
-## Выкарыстоўванне
+Frontend of Žožna web catalog of any serialized video content with
+description, discussion, registration and watching. Applies CSR
+(client-side rendering) and created with react, typescript and CSS
+modules.
+
+C#-Backend, created by my friend, are here:
+[Serialapi](https://github.com/redotv/serialapi)
+
+## Installation
+
+```bash
+git clone https://github.com/nadevko/zhozhna
+cd zhozhna
+npm install
+```
+
+## Usage
 
 ### `npm start`
 
-Запусціць прыкладанне ў рэжыме распрацоўшчыка, выкарыстоўваючы адрас
-[http://localhost:3000](http://localhost:3000) і адсочвая ўсе змены ў
-кодзе.
+Runs the app in the development mode on
+[http://localhost:3000](http://localhost:3000) with force reload on
+change and lint errors overlay.
 
 ### `npm run build`
 
-Сабраць прамысловую версію прыкдання ў тэчцу `dist`. Тады яно пройдзе
-прадукцыйную аптымізацыю, будзе сціснута, файлы спалучаць хэшы.
+Builds the app for production to the `dist` folder.
 
 ### `npm test`
 
-Запускае інтэрактыўную зменаадсочваючую тэставую прыладу.
+Launches the test runner in the interactive watch mode.

@@ -7,7 +7,8 @@
 Frontend of Žožna web catalog of any serialized video content with
 description, discussion, registration and watching. Applies CSR
 (client-side rendering) and created with react, typescript and CSS
-modules.
+modules. A working instance you can see on
+[GitHub Pages](https://nadevko.github.io/zhozhna)
 
 C#-Backend, created by my friend, are here:
 [Serialapi](https://github.com/redotv/serialapi)

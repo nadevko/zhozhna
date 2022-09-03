@@ -1,7 +1,6 @@
 ### Package managers
 # npm
 /node_modules
-package-lock.json
 npm-debug.log*
 # pnp
 /.pnp

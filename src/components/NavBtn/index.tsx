@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import s from './NavBtn.module.css'
+import s from './index.module.css'
 
 interface navBtnProps {
   href: string
@@ -9,15 +9,6 @@ interface navBtnProps {
   altHide?: boolean
 }
 
-/**
- *
- * @param root0
- * @param root0.href
- * @param root0.name
- * @param root0.Icon
- * @param root0.iconColor
- * @param root0.altHide
- */
 export default function NavBtn({
   href,
   name,

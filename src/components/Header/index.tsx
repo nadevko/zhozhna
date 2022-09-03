@@ -7,11 +7,9 @@ import {
   RiAccountCircleLine as IconAccount
 } from 'react-icons/ri'
 import { ReactComponent as Logo } from '../../assets/logo-zhozhna.svg'
-import NavBtn from './NavBtn'
+import NavBtn from '../NavBtn'
+import Search from '../Search'
 
-/**
- *
- */
 export default function Header(): ReactElement {
   return (
     <header className={s.body}>
@@ -24,7 +22,7 @@ export default function Header(): ReactElement {
         </a>
       </nav>
       <nav className={s.nav}>
-        <input type="search" placeholder="Пошук" name="search" className={s.input} />
+        <Search />
         <NavBtn href="/search" name="Пошук" Icon={IconSearch} altHide />
         <NavBtn href="#player" name="Бачма" Icon={IconPlayer} />
         <NavBtn href="#comments" name="Размовы" Icon={IconForum} />

@@ -46,4 +46,8 @@
 	height: 24px;
 	width: 24px;
 	padding: 8px;
+	@media screen and (max-device-width: 768px) {
+		height: 30px;
+		width: 30px;
+	}
 }

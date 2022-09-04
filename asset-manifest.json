@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/zhozhna/static/css/main.5f052b6c.css",
+    "main.js": "/zhozhna/static/js/main.8ea485ad.js",
+    "static/js/787.fd888b0c.chunk.js": "/zhozhna/static/js/787.fd888b0c.chunk.js",
+    "static/media/logo-zhozhna.svg": "/zhozhna/static/media/logo-zhozhna.cba99d05e18e9626f4be98479254c267.svg",
+    "index.html": "/zhozhna/index.html",
+    "main.5f052b6c.css.map": "/zhozhna/static/css/main.5f052b6c.css.map",
+    "main.8ea485ad.js.map": "/zhozhna/static/js/main.8ea485ad.js.map",
+    "787.fd888b0c.chunk.js.map": "/zhozhna/static/js/787.fd888b0c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f052b6c.css",
+    "static/js/main.8ea485ad.js"
+  ]
+}

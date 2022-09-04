@@ -1,12 +1,12 @@
 import { ReactElement } from 'react'
-import s from './index.module.css'
+import styles from './index.module.css'
 
-interface navBtnProps {
+interface NavBtnProps {
   href: string
   name: string
   Icon: React.ElementType
   iconColor?: string
-  altHide?: boolean
+  s?: CSSModule
 }
 
 export default function NavBtn({
@@ -14,10 +14,10 @@ export default function NavBtn({
   name,
   Icon,
   iconColor = '#000000',
-  altHide
-}: navBtnProps): ReactElement {
+  s = styles
+}: NavBtnProps): ReactElement {
   return (
-    <a href={href} className={altHide ?? false ? s.body_search : s.body}>
+    <a href={href} className={s.body}>
       <Icon className={s.icon} color={iconColor} title={name} />
       <h2 className={s.name}>{name}</h2>
     </a>

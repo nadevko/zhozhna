@@ -1,0 +1,24 @@
+.body {
+	composes: body from "../NavBtn/index.module.css";
+	display: none;
+
+	@media screen and (max-device-width: 1024px) {
+		display: initial;
+	}
+
+	@media screen and (max-device-width: 768px) {
+		display: none;
+	}
+
+	@media screen and (max-device-width: 480px) {
+		display: initial;
+	}
+}
+
+.name {
+	composes: name from "../NavBtn/index.module.css";
+}
+
+.icon {
+	composes: icon from "../NavBtn/index.module.css";
+}

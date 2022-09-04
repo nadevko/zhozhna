@@ -25,23 +25,6 @@
 	}
 }
 
-.body_search {
-	composes: body;
-	display: none;
-
-	@media screen and (max-device-width: 1024px) {
-		display: initial;
-	}
-
-	@media screen and (max-device-width: 768px) {
-		display: none;
-	}
-
-	@media screen and (max-device-width: 480px) {
-		display: initial;
-	}
-}
-
 .icon {
 	height: 24px;
 	width: 24px;
